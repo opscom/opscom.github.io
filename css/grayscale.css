@@ -37,6 +37,15 @@
   background-color: transparent;
 }
 
+#ops_logo {
+  width: 206px;
+  height: 47px;
+}
+
+.ops-logo-b {
+  background: url(../img/ops_logo_bk.png) no-repeat center;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -83,6 +92,9 @@
     color: #64a19d;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
+  }
+  .ops-logo-w {
+  background: url(../img/ops_logo_wht.png) no-repeat center;
   }
 }
 

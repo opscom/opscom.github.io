@@ -30,10 +30,22 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
-      $("#ops_logo").attr("src","img/ops_logo_bk.png");
+      // 
+      if ($(window).width() > 992) {
+        if ($("#ops_logo").hasClass("ops-logo-w")) {//&& $("#mainNav").hasClass("navbar-shrink")) {
+          $("#ops_logo").removeClass("ops-logo-w");
+          $("#ops_logo").addClass("ops-logo-b");
+        } //else {
+      }
     } else {
       $("#mainNav").removeClass("navbar-shrink");
-      $("#ops_logo").attr("src","img/ops_logo_wht.png");
+
+      if ($(window).width() > 992) {
+        if ($("#ops_logo").hasClass("ops-logo-b")) {//&& $("#mainNav").hasClass("navbar-shrink")) {
+          $("#ops_logo").removeClass("ops-logo-b");
+          $("#ops_logo").addClass("ops-logo-w");
+        } //else {
+      }
     }
   };
   // Collapse now if page is not at top
